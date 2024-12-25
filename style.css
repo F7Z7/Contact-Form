@@ -119,4 +119,8 @@ input[type="radio"] {
 .submit:hover {
     background-color: #005f47; /* Slightly darker green on hover */
 }
+#alertBox,.required{
+    color: red;
+    font-weight: bold;
+}
 
