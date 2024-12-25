@@ -36,7 +36,7 @@
             <label for="mail">Email Address</label>
             <input type="email" id="mail" name="mail" required>
             <!--this text will be dynamically added if the entered email is not valid        -->
-            <p id="alertBox"></p>
+            <div id="alertBox"></div>
             <div class="required">This field is required</div>
         </div>
     </div>
@@ -68,13 +68,12 @@
         <label>
             <input type="checkbox" id="agree" name="terms" required>
             I consent to being contacted by the team
-            To submit this form, please consent to being contacted
+            <div class="required">To submit this form, please consent to being contacted</div>
         </label>
     </div>
-    <div class="butn">
-        <button class="submit" onclick="submitFN">Submit</button>
+    <div class="submitbtn">
+        <button class="submit" onclick="submitFN" style="width: 100%">Submit</button>
     </div>
-
     <div class="completion">
     </div>
 
