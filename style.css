@@ -103,6 +103,17 @@ input[type="radio"] {
     flex-direction: column;
     width: 100%;
 }
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.submitBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+
+}
 .submit {
     background-color: #007f5f; /* Green color similar to the image */
     color: white;
@@ -114,6 +125,7 @@ input[type="radio"] {
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 100%;
+
 }
 
 .submit:hover {
@@ -123,4 +135,3 @@ input[type="radio"] {
     color: red;
     font-weight: bold;
 }
-

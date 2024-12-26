@@ -17,70 +17,69 @@
           rel="stylesheet">
 </head>
 <body>
-<div class="parent" id="parent">
-    <h1> Contact Us</h1>
-    <div class="fname">
-        <div class="holder">
-            <label for="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstname" required>
-            <div class="required" id="fiName">This field is required</div>
+<main>
+    <div class="parent" id="parent">
+        <h1> Contact Us</h1>
+        <div class="fname">
+            <div class="holder">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" required>
+                <div class="required" id="fiName">This field is required</div>
+            </div>
+            <div class="holder">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+                <div class="required" id="laName">This field is required</div>
+            </div>
         </div>
-        <div class="holder">
-            <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" name="lastname" required>
-            <div class="required" id="laName">This field is required</div>
+        <div class="mail">
+            <div class="holder">
+                <label for="mail">Email Address</label>
+                <input type="email" id="mail" name="mail" required>
+                <!--this text will be dynamically added if the entered email is not valid        -->
+                <div id="alertBox"></div>
+                <div class="required" id="mailCheck">This field is required</div>
+            </div>
         </div>
-    </div>
-    <div class="mail">
-        <div class="holder">
-            <label for="mail">Email Address</label>
-            <input type="email" id="mail" name="mail" required>
-            <!--this text will be dynamically added if the entered email is not valid        -->
-            <div id="alertBox"></div>
-            <div class="required" id="mailCheck">This field is required</div>
-        </div>
-    </div>
-    <div class="query-select">
-        <div class="holder">
-            <label>Query Type</label>
-            <div class="radio-group">
-                <div class="options">
-                    <div class="option">
-                        <input type="radio" id="general" name="queryType" value="general" required>
-                        <label for="general">General Enquiry</label>
-                    </div>
-                    <div class="option">
-                        <input type="radio" id="support" name="queryType" value="support" required>
-                        <label for="support">Support Request</label>
+        <div class="query-select">
+            <div class="holder">
+                <label>Query Type</label>
+                <div class="radio-group">
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="general" name="queryType" value="general" required>
+                            <label for="general">General Enquiry</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="support" name="queryType" value="support" required>
+                            <label for="support">Support Request</label>
+                        </div>
                     </div>
                 </div>
+                <div class="required" id="querRequired">PLease select a category</div>
             </div>
-            <div class="required" id="querRequired">PLease select a category</div>
+        </div>
+
+        <div class="msg">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" rows="05" cols="70"></textarea>
+        </div>
+        <div class="required" id="msgRequired">This field is required</div>
+
+        <div class="terms">
+            <label>
+                <input type="checkbox" id="agree" name="terms" required>
+                I consent to being contacted by the team
+            </label>
+            <div class="required" id="agreeReq">To submit this form, please consent to being contacted</div>
+
+        </div>
+
+        <div class="submitBtn">
+            <button class="submit" onclick="submitFN()" style="width: 100%">Submit</button>
         </div>
     </div>
-
-    <div class="msg">
-        <label for="msg">Message</label>
-        <textarea id="msg" name="msg" rows="05" cols="70"></textarea>
-    </div>
-    <div class="required" id="msgRequired">This field is required</div>
-
-    <div class="terms">
-        <label>
-            <input type="checkbox" id="agree" name="terms" required>
-            I consent to being contacted by the team
-        </label>
-        <div class="required" id="agreeReq">To submit this form, please consent to being contacted</div>
-
-    </div>
-    <div class="submitbtn">
-        <button class="submit" onclick="submitFN()" style="width: 100%">Submit</button>
-    </div>
-    <div class="completion">
-    </div>
-
-
-</div>
+</main>
 <script src="script.js"></script>
 </body>
 </html>
