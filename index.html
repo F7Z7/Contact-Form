@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobileStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&display=swap"
           rel="stylesheet">
 </head>
@@ -74,7 +75,10 @@
             <div class="required" id="agreeReq">To submit this form, please consent to being contacted</div>
 
         </div>
-
+        <div id="toast" class="toast hidden">
+            <p><strong>Message Sent!</strong></p>
+            <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
         <div class="submitBtn">
             <button class="submit" onclick="submitFN()" style="width: 100%">Submit</button>
         </div>

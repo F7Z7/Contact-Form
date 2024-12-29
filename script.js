@@ -55,19 +55,28 @@ function submitFN() {
     } else {
         document.getElementById("querRequired").style.visibility = "hidden";
     }
-    if (!agree) {
-        document.getElementById("agreeReq").style.visibility = "visible";
-        hasError = true;
+
+    if (!hasError) {
+        if (!agree) {
+            document.getElementById("agreeReq").style.visibility = "visible";
+
+        } else {
+            document.getElementById("agreeReq").style.visibility = "hidden";
+            const toast = document.getElementById('toast');
+            toast.classList.remove('hidden');
+            toast.classList.add('visible');
+
+            setTimeout(() => {
+                toast.classList.remove('visible');
+                toast.classList.add('hidden');
+            }, 2000);
+        }
 
     } else {
-        document.getElementById("agreeReq").style.visibility = "hidden";
-    }
-    if (!hasError) {
-alert("form completed")
-    }
-    else{
         console.log("not completed")
     }
+
+
 
 }
 
