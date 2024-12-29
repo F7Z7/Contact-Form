@@ -97,23 +97,27 @@ input[type="radio"] {
     border: 1px solid lightgray;; /* Border color */
     border-radius: 10px; /* Rounded corners */
 }
-.msg{
+
+.msg {
     display: flex;
     gap: 10px;
     flex-direction: column;
     width: 100%;
 }
-.footer{
+
+.footer {
     display: flex;
     flex-direction: column;
 }
-.submitBtn{
+
+.submitBtn {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width: 100%;
 
 }
+
 .submit {
     background-color: #007f5f; /* Green color similar to the image */
     color: white;
@@ -131,7 +135,26 @@ input[type="radio"] {
 .submit:hover {
     background-color: #005f47; /* Slightly darker green on hover */
 }
-#alertBox,.required{
+
+#alertBox, .required {
     color: red;
     font-weight: bold;
+}
+
+/*responsive */
+
+@media (max-width: 600px) {
+    .parent {
+        flex-direction: column;
+        padding: 1rem; /* Reduce padding for smaller screens */
+        width: 100%;
+        height: auto;
+    }
+
+    .fname, .mail, .message {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Add spacing between input fields */
+        width: 100%;
+    }
 }
